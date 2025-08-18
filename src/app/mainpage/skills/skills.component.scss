@@ -1,0 +1,119 @@
+section {
+    width: 100%;
+    background: url('./../../../../public/Assets/Images/01_Background/Img Original Size/Skills BG.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    .content {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        margin: 120px;
+
+        .content-top {
+            display: flex;
+            justify-content: flex-start;
+
+            .left-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                color: white;
+
+                p {
+                    font-size: 20px;
+                }
+
+                .skillSetImage {
+                    width: fit-content;
+                    height: fit-content;
+
+                    >.animatedSkillBackground {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-image: url('./../../../../public/Assets/Images/00_Hand-drawn-lines/02_Skills/Color option 1.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        animation: boomerang infinite ease-in-out;
+                        animation-duration: 5s;
+                    }
+
+                    h2 {
+                        font-size: 56px;
+                        z-index: 2;
+                    }
+                }
+
+            }
+
+            .right-content {
+                background: url('./../../../../public/Assets/Images/02_Ripped Paper/1.Skills description.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-left: 50px;
+                padding: 25px 30px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                width: 640px;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: flex-end;
+
+            .bottom-right {
+                width: 200px;
+                height: 200px;
+                background: url('./../../../../public/Assets/Images/03_Stickers/01_Skills - Peel off/Default.png');
+                background-size: contain;
+                transform: rotate(10deg);
+            }
+
+            .bottom-left {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                width: 800px;
+                color: white;
+
+                >div {
+                    text-align: center;
+                    width: 100px;
+                    font-size: 20px;
+                    margin: 25px;
+
+                    img {
+                        width: 100px;
+                        filter: grayscale(1);
+
+                        &:hover {
+                            filter: grayscale(0)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: 100%;
+        max-width: 1920px;
+    }
+}

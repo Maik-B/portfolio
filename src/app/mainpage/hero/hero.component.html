@@ -1,0 +1,44 @@
+<section>
+
+    <div class="content">
+
+        <div class="left-content">
+            <img src="Assets/Images/04_Sonstiges/linkedin.png" alt="linkedin">
+            <img src="Assets/Images/04_Sonstiges/github.png" alt="github">
+            <img src="Assets/Images/04_Sonstiges/mail.png" alt="mail">
+        </div>
+
+        <div class="center-content">
+            <div class="center-top">
+                <div class="top-left">
+                                        <div class="hello-container">
+                                            <img src="Assets/Images/04_Sonstiges/waving_hand.png" alt="Waving Hand" class="waving-hand" />
+                                            <div class="hello">
+                                            </div>
+                                        </div>
+                    <div class="frontend">
+                        @for (letter of frontendLetters; track letter) {
+                            <span class="letter" (mouseenter)="toggleCase(letter, $event)" (mouseleave)="toggleCase(letter, $event)">{{ letter }}</span>
+                        }
+                    </div>
+                </div>
+                <div class="top-right">
+                    <div class="img">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="center-bottom">
+                                <div class="dev">
+                                    @for (letter of devLetters; track letter) {
+                                        <span class="letter" (mouseenter)="toggleCase(letter, $event)" (mouseleave)="toggleCase(letter, $event)">{{ letter }}</span>
+                                    }
+                                </div>
+                <a href="#contact"><div class="git"><span>get in Touch</span></div></a>
+            </div>
+        </div>
+        <div class="right-content"></div>
+
+    </div>
+
+</section>

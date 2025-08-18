@@ -1,0 +1,52 @@
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-bottom: -80px;
+    z-index: 100;
+
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 80px;
+        color: white;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            li {
+                width: 300px;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    color: white;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: 100%;
+        max-width: 1920px;
+    }
+}

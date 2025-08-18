@@ -1,1 +1,86 @@
+@use '@angular/material' as mat;
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+
+
+
+html {
+  @include mat.theme((color: (theme-type: light,
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    ));
+}
+
 /* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+html {
+  -ms-overflow-style: none;
+
+
+  scrollbar-width: none;
+  overflow: auto;
+  font-size: 10px;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@keyframes boomerang {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  20% {
+    clip-path: inset(0 0 0 0);
+  }
+
+  40% {
+    clip-path: inset(0 0 0 0);
+  }
+
+  60% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  80% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+}
