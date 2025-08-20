@@ -39,6 +39,10 @@ section {
                 position: relative;
                 z-index: 2;
                 background: none;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             .img-wrapper::after {

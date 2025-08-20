@@ -74,68 +74,58 @@ body {
 
 @keyframes fadeRevealDown {
   0% {
-    opacity: 0;
+    opacity: 1;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 0%, black 0%, black 0%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, transparent 0%, black 0%, black 0%, transparent 100%);
   }
 
   10% {
     opacity: 0.1;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 10%, transparent 10%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 10%, transparent 10%, transparent 100%);
   }
 
   20% {
     opacity: 0.2;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 20%, transparent 20%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 20%, transparent 20%, transparent 100%);
   }
 
   30% {
     opacity: 0.3;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 30%, transparent 30%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 30%, transparent 30%, transparent 100%);
   }
 
   40% {
     opacity: 0.4;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 40%, transparent 40%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 40%, transparent 40%, transparent 100%);
   }
 
   50% {
     opacity: 0.5;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 50%, transparent 50%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 50%, transparent 50%, transparent 100%);
   }
 
   60% {
     opacity: 0.6;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 60%, transparent 60%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 60%, transparent 60%, transparent 100%);
   }
 
   70% {
     opacity: 0.7;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 70%, transparent 70%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 70%, transparent 70%, transparent 100%);
   }
 
   80% {
     opacity: 0.8;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 80%, transparent 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 80%, transparent 80%, transparent 100%);
   }
 
   90% {
     opacity: 0.9;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 90%, transparent 90%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 90%, transparent 90%, transparent 100%);
   }
 
   100% {
     opacity: 1;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 100%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 100%, transparent 100%);
   }
 }
@@ -147,5 +137,62 @@ body {
 
   to {
     height: 100%;
+  }
+}
+
+@keyframes fadeRevealRight {
+  0% {
+    opacity: 0;
+    mask-image: linear-gradient(to right, transparent 0%, transparent 0%, black 0%, black 0%, transparent 100%);
+  }
+
+  10% {
+    opacity: 0.1;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 10%, transparent 10%, transparent 100%);
+  }
+
+  20% {
+    opacity: 0.2;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 20%, transparent 20%, transparent 100%);
+  }
+
+  30% {
+    opacity: 0.3;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 30%, transparent 30%, transparent 100%);
+  }
+
+  40% {
+    opacity: 0.4;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 40%, transparent 40%, transparent 100%);
+  }
+
+  50% {
+    opacity: 0.5;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 50%, transparent 50%, transparent 100%);
+  }
+
+  60% {
+    opacity: 0.6;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 60%, transparent 60%, transparent 100%);
+  }
+
+  70% {
+    opacity: 0.7;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 70%, transparent 70%, transparent 100%);
+  }
+
+  80% {
+    opacity: 0.8;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 80%, transparent 80%, transparent 100%);
+  }
+
+  90% {
+    opacity: 0.9;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 90%, transparent 90%, transparent 100%);
+  }
+
+  100% {
+    opacity: 1;
+    mask-image: linear-gradient(to right, transparent 0%, black 0%, black 100%, transparent 100%);
   }
 }
