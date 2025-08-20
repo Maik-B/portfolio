@@ -196,3 +196,15 @@ body {
     mask-image: linear-gradient(to right, transparent 0%, black 0%, black 100%, transparent 100%);
   }
 }
+
+@keyframes navbarSlideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
