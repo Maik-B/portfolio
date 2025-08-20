@@ -1,3 +1,47 @@
+// Add hover background image for nav-skills, nav-projects, nav-contact
+.nav-skills,
+.nav-projects,
+.nav-contact {
+    position: relative;
+    padding: 6px 18px;
+    border-radius: 12px;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.nav-skills::before,
+.nav-projects::before,
+.nav-contact::before {
+    content: '';
+    position: absolute;
+    left: -0.35em;
+    top: -0.35em;
+    width: 100%;
+    height: 100%;
+    padding: 0.35em;
+    background-image: url('/Assets/Images/00_Hand-drawn-lines/00_Header/Color option 1/B.1 1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 100%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 100%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: none;
+}
+
+.nav-skills:hover::before,
+.nav-projects:hover::before,
+.nav-contact:hover::before {
+    animation: fadeRevealDown 0.2s forwards;
+}
+
 header {
     top: 0;
     left: 0;
@@ -37,6 +81,47 @@ header {
         }
     }
 }
+
+// Add hover background image for nav-about
+
+.nav-about {
+    position: relative;
+    padding: 6px 18px;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.nav-about::before {
+    content: '';
+    position: absolute;
+    left: -0.35em;
+    top: -0.35em;
+    width: 100%;
+    height: 100%;
+    padding: 0.35em;
+    background-image: url('/Assets/Images/00_Hand-drawn-lines/00_Header/Color option 1/B.1 1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 100%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 100%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: none;
+}
+
+.nav-about:hover::before {
+    animation: fadeRevealDown 0.2s forwards;
+}
+
+
+
 
 header,
 section,
