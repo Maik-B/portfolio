@@ -121,7 +121,8 @@
                 border-radius: 25px;
                 padding: 5px 20px;
                 box-shadow: 1.5px 4px;
-                transition: translate ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+                transition: translate ease-in-out 0.2s,
+                    box-shadow ease-in-out 0.2s;
 
                 &:hover {
                     color: white;
@@ -131,11 +132,7 @@
                 }
             }
         }
-
-
-
     }
-
 }
 
 header,
