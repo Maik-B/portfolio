@@ -52,12 +52,16 @@
     color: white;
 }
 
-.bottom-right {
-    width: 200px;
-    height: 200px;
-    background: url('./../../../../public/Assets/Images/03_Stickers/01_Skills - Peel off/Default.png');
-    background-size: contain;
-    transform: rotate(10deg);
+
+
+@keyframes fadeBg {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 section {
@@ -160,6 +164,10 @@ section {
                 background: url('./../../../../public/Assets/Images/03_Stickers/01_Skills - Peel off/Default.png');
                 background-size: contain;
                 transform: rotate(10deg);
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor: pointer;
+                animation: fadeBg 0.4s;
             }
 
 

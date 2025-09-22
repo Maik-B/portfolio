@@ -9,9 +9,9 @@ import { FooterComponent } from "./footer/footer.component";
 
 @Component({
   selector: 'app-mainpage',
-  imports: [HeroComponent, AboutComponent, SkillsComponent, ProjectsComponent, ReviewsComponent, ContactComponent, FooterComponent],
   templateUrl: './mainpage.component.html',
-  styleUrl: './mainpage.component.scss'
+  styleUrl: './mainpage.component.scss',
+  imports: [HeroComponent, AboutComponent, SkillsComponent, ProjectsComponent, ReviewsComponent, ContactComponent, FooterComponent]
 })
 export class MainpageComponent {
 
